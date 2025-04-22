@@ -122,6 +122,19 @@
 	text-align: center;
 }
 
+.button_box {
+	display: flex;
+	gap: 100px;
+}
+
+.button_line {
+	background-color: #00C300;
+}
+
+.button_line:hover {
+	background-color: #00B200;
+}
+
 /* --- 📱 スマホ用のレイアウト調整 --- */
 
 @media (min-width: 768px) {
@@ -172,5 +185,53 @@
 		font-size: 1.2rem;
 		padding: 7px;
 
+	}
+}
+
+
+.cta-button-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	margin: 32px auto;
+	padding: 0 16px;
+}
+
+.cta-button {
+	display: inline-block;
+	width: 100%;
+	max-width: 320px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #fff;
+	transition: background-color 0.3s ease;
+	padding: 15px 30px;
+}
+
+.cta-button--phone {
+	background-color: #c23b3b;
+}
+
+.cta-button--phone:hover {
+	background-color: #a83232;
+}
+
+.cta-button--line {
+	background-color: #00C300;
+}
+
+.cta-button--line:hover {
+	background-color: #00B200;
+}
+
+/* PC用 横並びに変更 */
+@media (min-width: 768px) {
+	.cta-button-group {
+		flex-direction: row;
+		justify-content: center;
 	}
 }
