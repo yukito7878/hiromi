@@ -29,7 +29,7 @@
 /* STEP番号 */
 .step h2 {
 	display: flex;
-	font-size: 22px;
+	font-size: 19px;
 	color: black;
 	margin: auto;
 	margin-top: auto;
@@ -102,6 +102,14 @@
 	/* 上に余白を作って、中央配置 */
 	width: fit-content;
 	/* ボタンサイズをテキストに合わせる */
+}
+
+.purchase-step_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
 }
 
 /* ホバー時のエフェクト */
@@ -233,5 +241,7 @@
 	.cta-button-group {
 		flex-direction: row;
 		justify-content: center;
+		width: 80%;
 	}
+
 }

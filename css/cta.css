@@ -1,0 +1,169 @@
+/* ① 親を基準に絶対配置できるようにする */
+.callToAction {
+	position: relative;
+	display: inline-block;
+	/* 画像サイズに合わせたい場合 */
+	max-width: 100%;
+	display: block;
+	margin: 2rem auto;
+	margin-bottom: 0;
+	width: 90%;
+}
+
+/* 画像はそのまま縮む */
+.callToAction__img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* ② 見えないボタン（ヒットエリア） */
+.invisible-button_for_loop {
+	position: absolute;
+	z-index: 2;
+	/* 画像より前面に */
+	display: block;
+
+	/* ===== ここを調整して配置・サイズ指定 ===== */
+	top: 47%;
+	/* 画像内の上からの位置 */
+	left: 1%;
+	/* 画像内の左からの位置 */
+	width: 230px;
+	/* ヒットエリア幅 */
+	height: 100px;
+	/* ヒットエリア高さ */
+
+	/* ======================================== */
+
+	/* 完全に不可視（でもクリック可） */
+	background: transparent;
+	border: none;
+	outline: none;
+
+}
+
+
+/* ===== Banner base ===== */
+.promo-banner {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	z-index: 2147483000;
+	/* 最前面に近い */
+	display: inline-block;
+	text-decoration: none;
+	line-height: 0;
+	/* 画像周りの余白を無くす */
+	border-radius: 12px;
+	/* お好みで角丸 */
+	overflow: hidden;
+	background: transparent;
+}
+
+.topCta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 1rem;
+}
+
+
+.invisible-button {
+	position: absolute;
+	bottom: -67%;
+	/* 下からの位置 */
+	right: 79.2%;
+	/* 右からの位置 */
+	width: 220px;
+	/* ボタンの横幅 */
+	height: 100px;
+	/* ボタンの高さ */
+	display: block;
+	cursor: pointer;
+
+	/* ボタンを見えなくする */
+	background: transparent;
+	z-index: 10;
+
+}
+
+/* PC時のサイズ（必要に応じて調整）*/
+.promo-banner img {
+	display: block;
+	width: 320px;
+	/* 画像の表示幅（デスクトップ） */
+	height: auto;
+	/* 縦横比を維持 */
+}
+
+.cta_phoneCall,
+.cta_line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 95%;
+	margin-top: 1rem;
+	margin: auto
+}
+
+.advertisments {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 95%;
+	margin-top: 2rem;
+	margin: auto
+}
+
+.cta_number {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 95%;
+	margin-top: 2rem auto;
+}
+
+/* ===== Mobile（幅 ≤ 768px 想定）===== */
+@media (max-width: 768px) {
+	.promo-banner img {
+		width: 100%;
+		/* 画面幅いっぱい */
+		max-width: 100%;
+		/* はみ出し防止 */
+		height: auto;
+	}
+
+	.invisible-button {
+		bottom: 22%;
+		/* 下からの位置 */
+		right: 80.5%;
+		/* 右からの位置 */
+		width: 73px;
+		/* ボタンの横幅 */
+		height: 36px;
+
+	}
+
+	/* ② 見えないボタン（ヒットエリア） */
+	.invisible-button_for_loop {
+		/* ===== ここを調整して配置・サイズ指定 ===== */
+		top: 45%;
+		/* 画像内の上からの位置 */
+		left: 1%;
+		/* 画像内の左からの位置 */
+		width: 75px;
+		/* ヒットエリア幅 */
+		height: 35px;
+		/* ヒットエリア高さ */
+
+		/* 視覚的に見えないけどキーボード操作の人向けにフォーカス枠は表示 */
+		
+	}
+
+
+}

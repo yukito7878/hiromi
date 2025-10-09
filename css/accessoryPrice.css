@@ -261,17 +261,6 @@ td.price {
 	margin: 0;
 }
 
-.callToAction {
-	max-width: 1200px;
-	margin: 50px auto 0 auto;
-}
-
-.callToAction__img-hiromi {
-	max-width: 1200px;
-	display: flex;
-	width: 97%;
-	margin: auto;
-}
 
 @media (max-width: 768px) {
 

@@ -1,54 +1,54 @@
-document.addEventListener("DOMContentLoaded", function() {
-	const serviceItems = document.querySelectorAll(".service-item");
+//document.addEventListener("DOMContentLoaded", function() {
+//	const serviceItems = document.querySelectorAll(".service-item");
+//
+//	serviceItems.forEach((serviceItem) => {
+//		const btn = serviceItem.querySelector(".btn");
+//		const textContainer = serviceItem.querySelector(".text-container");
+//		const gradient = serviceItem.querySelector(".gradient");
+//		const paragraph = serviceItem.querySelector(".text-container p");
+//
+//		btn.addEventListener("click", function() {
+//			if (textContainer.style.maxHeight === "none") {
+//				// テキストが展開されている場合
+//				textContainer.style.maxHeight = "3em"; // 元の高さに戻す
+//				paragraph.style.display = "-webkit-box"; // 2行表示に戻す
+//				gradient.style.display = "block"; // ぼかしを再表示
+//				btn.textContent = "もっと読む"; // ボタンのテキストを変更
+//			} else {
+//				// テキストを展開する場合
+//				textContainer.style.maxHeight = "none"; // 高さ制限を解除
+//				paragraph.style.display = "block"; // 全体表示に切り替え
+//				gradient.style.display = "none"; // ぼかしを非表示
+//				btn.textContent = "閉じる"; // ボタンのテキストを変更
+//			}
+//		});
+//	});
+//});
+//document.addEventListener("DOMContentLoaded", function() {
+//	const toggleButton = document.querySelector(".jisseki__toggle-button");
+//	const itemsContainer = document.querySelector(".jissekiExs__items");
+//
+//	toggleButton.addEventListener("click", function() {
+//		if (itemsContainer.classList.contains("jissekiExs__items--expanded")) {
+//			// 閉じる動作
+//			itemsContainer.classList.remove("jissekiExs__items--expanded");
+//			toggleButton.textContent = "もっと見る";
+//		} else {
+//			// 開く動作
+//			itemsContainer.classList.add("jissekiExs__items--expanded");
+//			toggleButton.textContent = "閉じる";
+//		}
+//	});
+//});
 
-	serviceItems.forEach((serviceItem) => {
-		const btn = serviceItem.querySelector(".btn");
-		const textContainer = serviceItem.querySelector(".text-container");
-		const gradient = serviceItem.querySelector(".gradient");
-		const paragraph = serviceItem.querySelector(".text-container p");
-
-		btn.addEventListener("click", function() {
-			if (textContainer.style.maxHeight === "none") {
-				// テキストが展開されている場合
-				textContainer.style.maxHeight = "3em"; // 元の高さに戻す
-				paragraph.style.display = "-webkit-box"; // 2行表示に戻す
-				gradient.style.display = "block"; // ぼかしを再表示
-				btn.textContent = "もっと読む"; // ボタンのテキストを変更
-			} else {
-				// テキストを展開する場合
-				textContainer.style.maxHeight = "none"; // 高さ制限を解除
-				paragraph.style.display = "block"; // 全体表示に切り替え
-				gradient.style.display = "none"; // ぼかしを非表示
-				btn.textContent = "閉じる"; // ボタンのテキストを変更
-			}
-		});
-	});
-});
-document.addEventListener("DOMContentLoaded", function() {
-	const toggleButton = document.querySelector(".jisseki__toggle-button");
-	const itemsContainer = document.querySelector(".jissekiExs__items");
-
-	toggleButton.addEventListener("click", function() {
-		if (itemsContainer.classList.contains("jissekiExs__items--expanded")) {
-			// 閉じる動作
-			itemsContainer.classList.remove("jissekiExs__items--expanded");
-			toggleButton.textContent = "もっと見る";
-		} else {
-			// 開く動作
-			itemsContainer.classList.add("jissekiExs__items--expanded");
-			toggleButton.textContent = "閉じる";
-		}
-	});
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-	const hamburger = document.querySelector(".hamburger");
-	const nav = document.querySelector(".nav");
-
-	hamburger.addEventListener("click", function() {
-		nav.classList.toggle("active");
-	});
-});
+//document.addEventListener("DOMContentLoaded", function() {
+//	const hamburger = document.querySelector(".hamburger");
+//	const nav = document.querySelector(".nav");
+//
+//	hamburger.addEventListener("click", function() {
+//		nav.classList.toggle("active");
+//	});
+//});
 
 document.addEventListener("DOMContentLoaded", function() {
 	let swiper = new Swiper(".swiper-container", {
@@ -116,23 +116,23 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 });
 
-let lastScrollY = window.scrollY;
-// ヘッダーのスクロール挙動
-document.addEventListener("DOMContentLoaded", () => {
-	const header = document.querySelector(".header");
-	let lastScrollY = window.scrollY;
-
-	window.addEventListener("scroll", () => {
-		const currentScrollY = window.scrollY;
-
-		if (currentScrollY === 0) {
-			header.classList.remove("hidden");
-		} else if (currentScrollY > lastScrollY) {
-			header.classList.add("hidden");
-		} else {
-			header.classList.remove("hidden");
-		}
-
-		lastScrollY = currentScrollY;
-	});
-});
+//let lastScrollY = window.scrollY;
+//// ヘッダーのスクロール挙動
+//document.addEventListener("DOMContentLoaded", () => {
+//	const header = document.querySelector(".header");
+//	let lastScrollY = window.scrollY;
+//
+//	window.addEventListener("scroll", () => {
+//		const currentScrollY = window.scrollY;
+//
+//		if (currentScrollY === 0) {
+//			header.classList.remove("hidden");
+//		} else if (currentScrollY > lastScrollY) {
+//			header.classList.add("hidden");
+//		} else {
+//			header.classList.remove("hidden");
+//		}
+//
+//		lastScrollY = currentScrollY;
+//	});
+//});
