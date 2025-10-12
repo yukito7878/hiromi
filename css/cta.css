@@ -17,33 +17,6 @@
 	height: auto;
 }
 
-/* ② 見えないボタン（ヒットエリア） */
-.invisible-button_for_loop {
-	position: absolute;
-	z-index: 2;
-	/* 画像より前面に */
-	display: block;
-
-	/* ===== ここを調整して配置・サイズ指定 ===== */
-	top: 47%;
-	/* 画像内の上からの位置 */
-	left: 1%;
-	/* 画像内の左からの位置 */
-	width: 230px;
-	/* ヒットエリア幅 */
-	height: 100px;
-	/* ヒットエリア高さ */
-
-	/* ======================================== */
-
-	/* 完全に不可視（でもクリック可） */
-	background: transparent;
-	border: none;
-	outline: none;
-
-}
-
-
 /* ===== Banner base ===== */
 .promo-banner {
 	position: fixed;
@@ -70,7 +43,7 @@
 }
 
 
-.invisible-button {
+.invisible-button_for_loop {
 	position: absolute;
 	bottom: -67%;
 	/* 下からの位置 */
@@ -86,6 +59,7 @@
 	/* ボタンを見えなくする */
 	background: transparent;
 	z-index: 10;
+	border: 1px solid black;
 
 }
 
