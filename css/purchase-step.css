@@ -236,12 +236,23 @@
 	background-color: #00B200;
 }
 
+.pc-br {
+  display: none;
+}
+
+
 /* PC用 横並びに変更 */
 @media (min-width: 768px) {
 	.cta-button-group {
 		flex-direction: row;
 		justify-content: center;
 		width: 80%;
+	}
+	.only_phone{
+		display: none;
+	}
+	.pc-br {
+	  display: block;
 	}
 
 }
